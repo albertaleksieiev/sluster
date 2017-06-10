@@ -38,7 +38,7 @@ public:
         int rv;
         int numbytes;
         struct sockaddr_storage their_addr;
-        int MAXBUFLEN = 128;
+        int MAXBUFLEN = 65536;
 
         char buf[MAXBUFLEN];
         socklen_t addr_len;
